@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { Company } from './components/Company';
+import { GenreMovies } from './components/GenreMovies';
+import { Movies } from './components/Movies';
+import { Products } from './components/Products';
+import { ProductsSorted } from './components/ProductsSorted';
+import { Quote } from './components/Quote';
+import { User } from './components/User';
+import { Weather } from './components/Weather';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ReactJS Practise Set Seven</h1>
+      <Weather />
+      <User />
+      <Movies />
+      <Company />
+      <Quote />
+      <GenreMovies />
+      <Products />
+      <ProductsSorted />
     </div>
   );
 }
